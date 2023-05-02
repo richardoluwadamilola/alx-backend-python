@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" The basics of async, working with 0-basic_async_syntax """
+""" The basics of async """
 
 import asyncio
 import random
@@ -17,6 +17,6 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
 
     for q in asyncio.as_completed(queue):
         result = await q
-        array.appemd(result)
+        array.append(result)
 
     return array
